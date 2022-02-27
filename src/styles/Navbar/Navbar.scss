@@ -43,7 +43,7 @@ $colors-background: (
         color: color(main) ;
         text-decoration: none;
     }
-    
+
     .menu__link__reservation {
         color: color(secound);
         background-color: background-color(fotter);
@@ -54,5 +54,56 @@ $colors-background: (
     .menu__logo {
         width: 120px;
         height: 70px;
+    }
+
+    .dropDown__box {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        z-index: 10;
+        top:80px;
+        left: 260px;
+        background-color: background-color(secound);
+        box-shadow: 0px 15px 40px rgba(112, 144, 176, 0.2);
+        border: solid 1px color(special);
+    
+        .menu__link__dropdown {
+            font-size: 16px;
+            font-family: font-family(main);
+            font-weight: 400;
+            color: color(main) ;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 5px 10px 5px 10px;
+        }
+    
+        .menu__link__dropdown:hover {
+            background-color: background-color(main);
+        }
+    }
+    .dropDown__box-active{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        z-index: 10;
+        top:80px;
+        left: 260px;
+        background-color: background-color(secound);
+        box-shadow: 0px 15px 40px rgba(112, 144, 176, 0.2);
+        border: solid 1px color(special);
+    
+        .menu__link__dropdown {
+            font-size: 16px;
+            font-family: font-family(main);
+            font-weight: 400;
+            color: color(main) ;
+            text-decoration: none;
+            cursor: pointer;
+            padding: 5px 10px 5px 10px;
+        }
+    
+        .menu__link__dropdown:hover {
+            background-color: background-color(main);
+        }
     }
 }
