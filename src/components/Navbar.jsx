@@ -6,7 +6,6 @@ import { navbarLinksLeft, navbarLinksRight } from './NavbarData/NavbarData';
 import { Link } from 'react-router-dom';
 import '../styles/Navbar/Navbar.css';
 import { Dropdown } from './Buttons/Dropdown';
-import { portfolioLinks } from './Buttons/DropdownData/DropDownData';
 
 
 
@@ -33,17 +32,7 @@ export const Navbar = () => {
                 {item.title}
             </Link>
         ))}
-        <div className={!showDropDown ? 'dropDown__box' : 'dropDown__box-active'}>
-          {portfolioLinks.map(item => (
-              <Link
-                  key = {item.key}
-                  className = {item.className}
-                  to = {item.url}
-                  >
-                  {item.title}
-              </Link>
-          ))}
-        </div>
+        <Dropdown enable ={showDropDown}/>
         <img className = 'menu__logo' src='images\Logo.png' alt='Logo'/>
         {navbarLinksRight.map(item => (
             <Link
