@@ -1,1 +1,1 @@
-.image-home{height:100%;width:100%;background-image:url("/public/images/Home/zdjecie_1.jpg");background-repeat:no-repeat;background-attachment:fixed;background-size:cover}
+.home__container{background-color:#fff;width:95vw;min-height:600px;margin:0 auto}
