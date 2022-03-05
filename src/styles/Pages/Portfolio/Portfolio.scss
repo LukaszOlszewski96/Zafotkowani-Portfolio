@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$font-family: (
+    main: 'Roboto',
+);
+
+$colors-font: (
+    main: #0B0F0C,
+    secound: #ffff,
+    special: #DCC9B9,
+);
+
+$colors-background: (
+    main: #DCC9B9,
+    secound: #ffff,
+    fotter: #AC8368,
+    special: #4E1214,
+);
+
+@function color($font-color) {
+    @return map-get($colors-font , $font-color)
+};
+
+@function background-color($color) {
+    @return map-get($colors-background , $color)
+};
+
+
+@function font-family($font-name) {
+    @return map-get($font-family , $font-name)
+};

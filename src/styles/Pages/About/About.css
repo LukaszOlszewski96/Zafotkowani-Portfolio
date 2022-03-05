@@ -89,3 +89,8 @@
   font-size: 18px;
   font-weight: 300;
 }
+
+.about__container .about__box .about__box__description .description__box .description_about span {
+  font-size: 28px;
+  color: red;
+}

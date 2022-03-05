@@ -21,7 +21,7 @@ export const About = () => {
             <p className='description_about'>Jesteśmy świeżo upieczonym małżeństwem, zawsze zmierzającym w tym samym kierunku.
             Robienie zdjęć sprawia nam ogromną radość i satysfakcję z tego, że to nas wybraliście do uwiecznienia najważniejszych momentów w Waszym życiu. 
             </p> 
-            <p className='description_about'>Także już wiecie, że ZAFOTKOWANI są ZAKOCHANI</p>
+            <p className='description_about'>Także już wiecie, że <b>ZAFOTKOWANI</b> są <b>ZAKOCHANI</b> <span>&#9829;</span></p>
           </div>
         </div>
       </div>

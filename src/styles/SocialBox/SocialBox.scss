@@ -1,0 +1,56 @@
+$font-family: (
+    main: 'Roboto',
+);
+
+$colors-font: (
+    main: #0B0F0C,
+    secound: #ffff,
+    special: #DCC9B9,
+    hover: #4E1214,
+);
+
+$colors-background: (
+    main: #DCC9B9,
+    secound: #ffff,
+    fotter: #AC8368,
+    special: #4E1214,
+);
+
+
+@function color($font-color) {
+    @return map-get($colors-font , $font-color)
+};
+
+@function background-color($color) {
+    @return map-get($colors-background , $color)
+};
+
+
+@function font-family($font-name) {
+    @return map-get($font-family , $font-name)
+};
+
+
+.social__box {
+    position: fixed;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: background-color(main);
+    width: 60px;
+    height: 170px;
+    top: 317px;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px 0 0 20px;
+
+    a   {
+        color: color(secound);
+        font-size: 32px;
+        
+        &:hover {
+            color: color(hover);
+            transition: 1s;
+        }
+    }
+}

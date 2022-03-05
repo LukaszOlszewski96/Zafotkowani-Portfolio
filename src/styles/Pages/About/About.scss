@@ -111,6 +111,11 @@ $colors-background: (
                 .description_about {
                     font-size: 18px;
                     font-weight: 300;
+
+                    span {
+                        font-size: 28px;
+                        color: red;
+                    }
                 }
             }
         }
