@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$font-family: (
+    main: 'Roboto',
+);
+
+$colors-font: (
+    main: #0B0F0C,
+    secound: #ffff,
+    special: #DCC9B9,
+);
+
+$colors-background: (
+    main: #DCC9B9,
+    secound: #ffff,
+    fotter: #AC8368,
+    special: #4E1214,
+);
+
+@function color($font-color) {
+    @return map-get($colors-font , $font-color)
+};
+
+@function background-color($color) {
+    @return map-get($colors-background , $color)
+};
+
+
+@function font-family($font-name) {
+    @return map-get($font-family , $font-name)
+};
+
+.opinion__container {
+    width: 100%;
+    height: 500px;
+    background-color: background-color(main);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    align-items: center;
+
+    .title__section__box {
+        font-family: font-family(main);
+        color: color(secound);
+        font-size: 50px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    .opinion__box {
+        margin-top: 40px;
+        width: 100%;
+        height: 459px;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .opinion__card {
+            height: 400px;
+            width: 350px;
+            margin-left: 2%;
+            margin-right: 2%;
+            border-radius: 10px;
+            background-color: background-color(secound);
+            filter: drop-shadow(9px 7px 26px rgba(0, 0, 0, 0.13));
+        }
+
+        .opinion__box__text{
+            background-color: transparent;
+            width: 270px;
+            margin: 0 auto;
+            margin-top: 50px;
+
+            .opinion__text {
+                font-size: 16px;
+                font-weight: 200;
+                font-family: font-family(main);
+                line-height: 25px;
+            }
+        }
+        .opinion__client__name {
+            font-size: 18px;
+            font-weight: bold;
+            font-family: font-family(main);
+            position: absolute;
+            top:300px;
+            left: 20%;
+        }
+
+        .opinion__event {
+            font-size: 14px;
+            font-weight: 300;
+            font-family: font-family(main);
+            position: absolute;
+            top:330px;
+            left: 20%;
+        }
+    }
+}

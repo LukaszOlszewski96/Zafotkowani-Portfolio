@@ -49,10 +49,8 @@ $colors-background: (
         margin-top: 50px;
 
         p {
-            text-align: center;
             color: color(secound);
             background-color: background-color(main);
-            z-index: 2;
             font-size: 24px;
             font-family: font-family(main);
             padding: 10px 50px 10px 50px;
@@ -63,7 +61,6 @@ $colors-background: (
             background-color: background-color(main);
             width: 100%;
             height: 2px;
-            z-index: 1;
         }
     }
     .about__box {
@@ -88,9 +85,10 @@ $colors-background: (
 
             .description__box {
                 height: 350px;
-                width: 670px;
+                max-width: 670px;
+                width: 75%;
                 margin-top: 30px;
-                margin-left: 150px;
+                margin-left: 20%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;

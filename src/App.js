@@ -5,6 +5,9 @@ import './styles/App/App.css';
 import { About } from "./pages/About";
 import { SocialBox } from "./components/SocialBox/SocialBox";
 import { Portfolio } from "./pages/Portfolio";
+import { Offer } from "./pages/Offer";
+import { Opinion } from "./pages/Opinion";
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -12,12 +15,15 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path = '/' element={
-        <>
-          <Home/>
-          <SocialBox/>
-          <About/>
-          <Portfolio/>
-        </>
+          <>
+            <Home/>
+            <SocialBox/>
+            <About/>
+            <Portfolio/>
+            <Offer/>
+            <Opinion/>
+            <Footer/>
+          </>
         }/>
       </Routes>
     </BrowserRouter>

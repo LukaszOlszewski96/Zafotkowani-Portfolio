@@ -1,1 +1,89 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.portfolio__container {
+  background-color: #DCC9B9;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.portfolio__container .title__section__box {
+  font-family: "Roboto";
+  color: #ffff;
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.portfolio__container .filters__box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio__container .filters__box .filters__box__links {
+  text-align: center;
+  font-size: 22px;
+  font-family: "Roboto";
+  color: #ffff;
+  margin-top: 30px;
+}
+
+.portfolio__container .filters__box .filters__box__links a {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.portfolio__container .filters__box .filters__box__links a:hover {
+  border-bottom: solid 3px #4E1214;
+  color: #4E1214;
+}
+
+.portfolio__container .gallery__box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.portfolio__container .blur {
+  background-image: linear-gradient(rgba(255, 255, 255, 0), white);
+  width: 100%;
+  height: 120px;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio__container .blur .gallery__btn {
+  font-size: 22px;
+  font-family: "Roboto";
+  display: flex;
+  flex-direction: column;
+  background-color: #4E1214;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffff;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
