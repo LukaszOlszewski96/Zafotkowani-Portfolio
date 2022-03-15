@@ -20,6 +20,39 @@ export const Navbar = () => {
 
   return (
     <Box sx={{ flexGrow: 1}}>
+      <AppBar sx={{ boxShadow: 0}} color='transparent' position = 'static'>
+      <div className = 'menu__conteiner'>
+        <Toolbar className='menu__box'>
+            {navbarLinksLeft.map(item => (
+                <Link
+                    key = {item.key}
+                    className = {item.className}
+                    to = {item.url}
+                    onClick = { item.title === 'PORTFOLIO' && hover }
+                >
+                    {item.title}
+                </Link>
+            ))}
+            </Toolbar>
+            <Dropdown enable ={showDropDown}/>
+            <img className = 'menu__logo' src='images\Logo.png' alt='Logo'/>
+            <Toolbar className='menu__box'>
+              {navbarLinksRight.map(item => (
+                  <Link
+                      key = {item.key}
+                      className = {item.className}
+                      to= {item.url}
+                  >
+                      {item.title}
+                  </Link>
+              ))}
+            </Toolbar>
+      </div>
+      </AppBar>
+  </Box>
+  )
+ /* return (
+    <Box sx={{ flexGrow: 1}}>
     <AppBar className = 'menu__conteiner' sx={{ boxShadow: 0}} color='transparent' position = 'static'>
       <Toolbar className='menu__box'>
         {navbarLinksLeft.map(item => (
@@ -46,5 +79,5 @@ export const Navbar = () => {
       </Toolbar>
     </AppBar>
   </Box>
-  )
+  )*/
 }

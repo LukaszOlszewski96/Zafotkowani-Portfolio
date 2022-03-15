@@ -15,7 +15,7 @@ export const About = () => {
         </div>
         <div className='about__box__description'>
           <div className='description__box'>
-            <p className='who_description'>Andżela Świeczak <span>&</span> Damian Świeczak</p>
+            <p className='who_description'>Angela Świeczak <span>&</span> Damian Świeczak</p>
             <p className='description_about'>Fantastycznie jest móc dzielić pasję, z kimś kogo się kocha!</p>
             <p className='description_about'>My mamy to szczęście.</p>
             <p className='description_about'>Jesteśmy świeżo upieczonym małżeństwem, zawsze zmierzającym w tym samym kierunku.
