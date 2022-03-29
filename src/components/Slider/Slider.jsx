@@ -24,7 +24,7 @@ export const Slider = () => {
         setIndex(prevState => prevState + 1);
       }
     }, 10000);
-  },[console.log(index), index])
+  },[index])
 
   return (
       <div className = "image__box">

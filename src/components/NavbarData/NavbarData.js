@@ -22,7 +22,7 @@ export const navbarLinksLeft = [
 export const navbarLinksRight = [
     {
         title: 'KONTAKT',
-        url: '#',
+        url: '/kontakt',
         className: 'menu__link',
         key: '4'
     },

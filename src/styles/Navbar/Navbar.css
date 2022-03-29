@@ -8,7 +8,6 @@
 .menu__conteiner .menu__box {
   margin: 20px;
   display: flex;
-  justify-content: space-evenly;
   width: 50%;
 }
 
@@ -16,8 +15,15 @@
   font-size: 16px;
   font-family: "Roboto";
   font-weight: 400;
+  padding-left: 10%;
+  padding-right: 10%;
   color: #0B0F0C;
   text-decoration: none;
+}
+
+.menu__conteiner .menu__box .menu__link:hover {
+  color: #DCC9B9;
+  transition: .5s;
 }
 
 .menu__conteiner .menu__box .menu__link__reservation {
@@ -27,7 +33,13 @@
   padding: 10px 10px 10px 10px;
 }
 
+.menu__conteiner .menu__box .menu__link__reservation:hover {
+  color: #ffff;
+  background-color: #4E1214;
+  transition: .5s;
+}
+
 .menu__conteiner .menu__logo {
-  width: 120px;
-  height: 70px;
+  width: auto;
+  height: 80px;
 }

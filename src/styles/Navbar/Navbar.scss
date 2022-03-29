@@ -37,15 +37,21 @@ $colors-background: (
     .menu__box {
         margin: 20px;
         display: flex;
-        justify-content: space-evenly;
         width: 50%;
     
         .menu__link {
             font-size: 16px;
             font-family: font-family(main);
             font-weight: 400;
+            padding-left: 10%;
+            padding-right: 10%;
             color: color(main) ;
             text-decoration: none;
+
+            &:hover {
+                color: color(special);
+                transition: .5s;
+            }
         }
     
         .menu__link__reservation {
@@ -53,13 +59,20 @@ $colors-background: (
             background-color: background-color(fotter);
             border-radius: 5px;
             padding: 10px 10px 10px 10px;
+
+            &:hover {
+                color: color(secound);
+                background-color: background-color(special);
+                transition: .5s;
+            }
+
         }
     }
     
     
     .menu__logo {
-        width: 120px;
-        height: 70px;
+        width: auto;
+        height: 80px;
     }
 }
 

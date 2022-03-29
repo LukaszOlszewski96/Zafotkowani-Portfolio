@@ -3,6 +3,7 @@ import Masonry, {ResponsiveMasonry} from 'react-responsive-masonry';
 import {MdOutlineClear} from 'react-icons/md';
 import '../../styles/Images/PhotoMasonry/PhotoMasonry.css';
 
+
 export const PhotoMasonry = ({photosData}) => {
 
     const [showDetails, setDetails] = useState('false');

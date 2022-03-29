@@ -33,9 +33,11 @@ export const Navbar = () => {
                     {item.title}
                 </Link>
             ))}
-            </Toolbar>
-            <Dropdown enable ={showDropDown}/>
+        <Dropdown enable ={showDropDown}/>
+        </Toolbar>
+          <Link to='/'>
             <img className = 'menu__logo' src='images\Logo.png' alt='Logo'/>
+          </Link>
             <Toolbar className='menu__box'>
               {navbarLinksRight.map(item => (
                   <Link

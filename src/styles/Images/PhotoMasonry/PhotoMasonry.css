@@ -47,7 +47,7 @@
 
 .mansory__box .photo__details__box img {
   width: auto;
-  height: auto;
+  height: 40vw;
   z-index: 10;
 }
 
