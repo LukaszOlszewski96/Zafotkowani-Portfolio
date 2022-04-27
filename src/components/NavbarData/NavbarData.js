@@ -28,7 +28,7 @@ export const navbarLinksRight = [
   },
   {
     title: "STREFA KLIENTA",
-    url: "#",
+    url: "/strefa-klienta",
     className: "menu__link",
     key: "5",
   },

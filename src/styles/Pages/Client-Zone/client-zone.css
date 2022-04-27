@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.clientZone {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clientZone .clientZone__title {
+  margin-top: 80px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  background-color: #dcc9b9;
+  width: fit-content;
+  border-radius: 8px;
+}
+
+.clientZone .clientZone__card-box {
+  margin-bottom: 40px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

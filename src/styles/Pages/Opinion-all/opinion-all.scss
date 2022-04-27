@@ -40,21 +40,20 @@ $colors-background: (
 
   .opinionAll__title {
     margin-top: 80px;
-    margin-bottom: 50px;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 500;
     font-size: 32px;
     line-height: 38px;
     color: #ffffff;
-    padding: 10px;
-    background-color: #ac8368;
+    padding: 10px 20px 10px 20px;
+    background-color: #dcc9b9;
     width: fit-content;
     border-radius: 8px;
   }
 
   .opinionAll__opinions-box {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     width: 80%;
     height: 100%;
     display: flex;
