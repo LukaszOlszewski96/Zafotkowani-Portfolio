@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+$font-family: (
+  main: "Roboto",
+);
+
+$colors-font: (
+  main: #0b0f0c,
+  secound: #ffff,
+  special: #dcc9b9,
+);
+
+$colors-background: (
+  main: #dcc9b9,
+  secound: #ffff,
+  fotter: #ac8368,
+  special: #4e1214,
+);
+
+@function color($font-color) {
+  @return map-get($colors-font, $font-color);
+}
+
+@function background-color($color) {
+  @return map-get($colors-background, $color);
+}
+
+@function font-family($font-name) {
+  @return map-get($font-family, $font-name);
+}
+
+.detailsGallery {
+  width: 100%;
+  min-height: 80vh;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .detailsGallery__img {
+    width: 400px;
+    height: 430px;
+    background-color: #4e1214;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .img {
+      width: auto;
+      height: auto;
+    }
+  }
+
+  .detailsGallery__login-form {
+    width: 400px;
+    height: 330px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+
+    .detailsGallery__title {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 38px;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+
+    .detailsGallery__text {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 21.5px;
+      line-height: 25px;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+
+    .detailsGallery__button {
+      background-color: #4e1214;
+      color: #ffff;
+      width: 114px;
+      height: 50px;
+      border-radius: 10px;
+      outline: none;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  }
+}

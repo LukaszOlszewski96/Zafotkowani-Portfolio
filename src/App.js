@@ -12,6 +12,7 @@ import { Contact } from "./pages/Contact";
 import { PortfolioALL } from "./pages/Portfolio-all";
 import { OpinionAll } from "./pages/Opinion-all";
 import { ClientZone } from "./pages/Client-zone";
+import { DetailsGallery } from "./pages/Details-gallery";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/portfolio" element={<PortfolioALL />} />
         <Route path="/opinie" element={<OpinionAll />} />
         <Route path="/strefa-klienta" element={<ClientZone />} />
+        <Route path="/strefa-klienta/galeria" element={<DetailsGallery />} />
       </Routes>
       <Footer />
     </BrowserRouter>

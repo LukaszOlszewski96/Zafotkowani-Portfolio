@@ -42,6 +42,7 @@ $colors-background: (
   flex-direction: column;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 
   .clientZone__card___lock {
     color: #ffffff;
