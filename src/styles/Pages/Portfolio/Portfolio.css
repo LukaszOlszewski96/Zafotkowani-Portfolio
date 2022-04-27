@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 .portfolio__container {
-  background-color: #DCC9B9;
+  background-color: #dcc9b9;
   width: 100%;
   height: auto;
   display: flex;
@@ -41,14 +41,14 @@
 }
 
 .portfolio__container .filters__box .filters__box__links a:hover {
-  border-bottom: solid 3px #4E1214;
-  color: #4E1214;
+  border-bottom: solid 3px #4e1214;
+  color: #4e1214;
 }
 
 .portfolio__container .gallery__box {
   display: flex;
   width: 100%;
-  height: 100%;
+  height: 700px;
   justify-content: center;
 }
 
@@ -68,7 +68,7 @@
   font-family: "Roboto";
   display: flex;
   flex-direction: column;
-  background-color: #4E1214;
+  background-color: #4e1214;
   padding: 10px 20px 10px 20px;
   border-radius: 10px;
   text-decoration: none;

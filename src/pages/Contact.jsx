@@ -9,10 +9,14 @@ import Autocomplete from "@mui/material/Autocomplete";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import LocalizationProvider from "@mui/lab/LocalizationProvider";
 import DateTimePicker from "@mui/lab/DateTimePicker";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox";
 
 const option = ["a", "b", "c"];
 
 export const Contact = () => {
+  const [value, setValue] = React.useState(new Date());
+
   return (
     <div className="contact__container">
       <div className="describe__box">
@@ -44,8 +48,8 @@ export const Contact = () => {
             </a>
           </span>
           <svg
-            width="400"
-            height="400"
+            width="500"
+            height="500"
             viewBox="0 0 500 500"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -536,9 +540,18 @@ export const Contact = () => {
       </div>
       <div className="formulage__box">
         <form className="contact__formulage">
-          <TextField label="Imię" variant="outlined" />
-          <TextField label="E-mail" variant="outlined" />
+          <TextField
+            className="formulage__item"
+            label="Imię"
+            variant="outlined"
+          />
+          <TextField
+            className="formulage__item"
+            label="E-mail"
+            variant="outlined"
+          />
           <Autocomplete
+            className="formulage__item"
             multiple
             id="tags-outlined"
             options={option}
@@ -548,18 +561,41 @@ export const Contact = () => {
               <TextField {...params} label="Rodzaj reportażu" placeholder="" />
             )}
           />
-          <span>
-            <TextField label="Miasto" variant="outlined" />
-            <TextField label="Adres" variant="outlined" />
+          <span className="formulage__item__city-address">
+            <TextField
+              className="formulage__item formulage__item__city"
+              label="Miasto"
+              variant="outlined"
+            />
+            <TextField
+              className="formulage__item formulage__item__address"
+              label="Adres"
+              variant="outlined"
+            />
           </span>
           <LocalizationProvider dateAdapter={AdapterDateFns}>
             <DateTimePicker
               renderInput={(props) => <TextField {...props} />}
               label="DateTimePicker"
-              value={""}
-              onChange={(newValue) => {}}
+              value={value}
+              className="formulage__item"
+              onChange={(newValue) => {
+                setValue(newValue);
+              }}
             />
           </LocalizationProvider>
+          <textarea
+            className="formulage__item formulage__item-textarea"
+            placeholder="Wiadomość"
+          />
+          <span className="formulage__item formulage__item-politic">
+            <Checkbox />
+            <p className="">Przeczytałem i akceptuję politykę prywatności.</p>
+          </span>
+
+          <button type="submit" className="formulage_item-button">
+            Wyślij
+          </button>
         </form>
       </div>
     </div>

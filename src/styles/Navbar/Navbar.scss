@@ -1,78 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 $font-family: (
-    main: 'Roboto',
+  main: "Roboto",
 );
 
 $colors-font: (
-    main: #0B0F0C,
-    secound: #ffff,
-    special: #DCC9B9,
+  main: #0b0f0c,
+  secound: #ffff,
+  special: #dcc9b9,
 );
 
 $colors-background: (
-    main: #DCC9B9,
-    secound: #ffff,
-    fotter: #AC8368,
-    special: #4E1214,
+  main: #dcc9b9,
+  secound: #ffff,
+  fotter: #ac8368,
+  special: #4e1214,
 );
 
 @function color($font-color) {
-    @return map-get($colors-font , $font-color)
-};
-
-@function background-color($color) {
-    @return map-get($colors-background , $color)
-};
-
-
-@function font-family($font-name) {
-    @return map-get($font-family , $font-name)
-};
-
-.menu__conteiner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .menu__box {
-        margin: 20px;
-        display: flex;
-        width: 50%;
-    
-        .menu__link {
-            font-size: 16px;
-            font-family: font-family(main);
-            font-weight: 400;
-            padding-left: 10%;
-            padding-right: 10%;
-            color: color(main) ;
-            text-decoration: none;
-
-            &:hover {
-                color: color(special);
-                transition: .5s;
-            }
-        }
-    
-        .menu__link__reservation {
-            color: color(secound);
-            background-color: background-color(fotter);
-            border-radius: 5px;
-            padding: 10px 10px 10px 10px;
-
-            &:hover {
-                color: color(secound);
-                background-color: background-color(special);
-                transition: .5s;
-            }
-
-        }
-    }
-    
-    
-    .menu__logo {
-        width: auto;
-        height: 80px;
-    }
+  @return map-get($colors-font, $font-color);
 }
 
+@function background-color($color) {
+  @return map-get($colors-background, $color);
+}
+
+@function font-family($font-name) {
+  @return map-get($font-family, $font-name);
+}
+
+.menu__conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .menu__box {
+    margin: 20px;
+    display: flex;
+    width: 50%;
+
+    .menu__link {
+      font-size: 16px;
+      font-family: font-family(main);
+      font-weight: 400;
+      padding-left: 10%;
+      padding-right: 10%;
+      color: color(main);
+      text-decoration: none;
+
+      &:hover {
+        color: color(special);
+        transition: 0.5s;
+      }
+    }
+
+    .menu__link__reservation {
+      color: color(secound);
+      background-color: background-color(fotter);
+      border-radius: 5px;
+      padding: 10px 10px 10px 10px;
+
+      &:hover {
+        color: color(secound);
+        background-color: background-color(special);
+        transition: 0.5s;
+      }
+    }
+  }
+
+  .menu__logo {
+    width: auto;
+    height: 80px;
+  }
+}

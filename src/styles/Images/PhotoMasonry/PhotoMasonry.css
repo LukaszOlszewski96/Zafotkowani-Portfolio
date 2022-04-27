@@ -2,7 +2,7 @@
 .mansory__box {
   margin-top: 50px;
   width: 85%;
-  height: 700px;
+  height: auto;
   overflow: hidden;
 }
 

@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+$font-family: (
+  main: "Roboto",
+);
+
+$colors-font: (
+  main: #0b0f0c,
+  secound: #ffff,
+  special: #dcc9b9,
+);
+
+$colors-background: (
+  main: #dcc9b9,
+  secound: #ffff,
+  fotter: #ac8368,
+  special: #4e1214,
+);
+
+@function color($font-color) {
+  @return map-get($colors-font, $font-color);
+}
+
+@function background-color($color) {
+  @return map-get($colors-background, $color);
+}
+
+@function font-family($font-name) {
+  @return map-get($font-family, $font-name);
+}
+
+.opinionAll {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .opinionAll__title {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    color: #ffffff;
+    padding: 10px;
+    background-color: #ac8368;
+    width: fit-content;
+    border-radius: 8px;
+  }
+
+  .opinionAll__opinions-box {
+    margin-bottom: 20px;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    .opinionAll__card {
+      width: 360px;
+      height: 459px;
+      margin-top: 50px;
+      left: 129px;
+      top: 461px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 9px 7px 26px rgba(0, 0, 0, 0.13);
+      display: flex;
+      flex-direction: column;
+
+      .opinionAll__card__avatar {
+        width: 70px;
+        height: 70px;
+        margin: 30px auto;
+      }
+      .opinionAll__card__name {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: #1f0d08;
+        text-align: center;
+      }
+      .opinionAll__card__text-box {
+        margin: auto;
+        width: 300px;
+        height: fit-content;
+        max-height: 250px;
+        overflow: auto;
+        flex-wrap: wrap;
+      }
+
+      .opinionAll__card__text {
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1f0d08;
+      }
+    }
+  }
+}

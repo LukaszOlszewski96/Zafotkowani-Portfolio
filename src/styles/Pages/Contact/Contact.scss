@@ -32,7 +32,7 @@ $colors-background: (
 .contact__container {
   background-color: #fff;
   width: 95vw;
-  height: 100vh;
+  height: 900px;
   margin: 0 auto;
   display: flex;
 
@@ -45,7 +45,7 @@ $colors-background: (
 
     .contact__box {
       width: 500px;
-      margin-top: 50px;
+      margin-top: 80px;
 
       .describe {
         font-family: font-family(main);
@@ -78,22 +78,90 @@ $colors-background: (
     .contact__box h1 {
       font-family: font-family(main);
       font-style: normal;
-      font-weight: 500;
+      font-weight: 600;
       font-size: 38px;
     }
   }
 
   .formulage__box {
-    background-color: green;
     width: 50%;
     height: 100%;
     display: flex;
+    align-items: center;
     flex-direction: column;
 
     .contact__formulage {
-      background-color: #4e1214;
       display: flex;
       flex-direction: column;
+      width: 364px;
+      margin-top: 80px;
+
+      .formulage__item {
+        margin-top: 20px;
+        width: 364px;
+        height: 50px;
+        box-sizing: border-box;
+      }
+
+      .formulage__item__city-address {
+        display: flex;
+        margin-bottom: 20px;
+      }
+
+      .formulage__item__city {
+        width: 126px;
+      }
+      .formulage__item__address {
+        width: 226px;
+        margin-left: 12px;
+      }
+      .MuiOutlinedInput-root {
+        border-radius: 10px;
+      }
+      .formulage__item-textarea {
+        width: 364px;
+        height: 203px;
+        border: 1px solid rgba(0, 0, 0, 0.223);
+        border-radius: 10px;
+        resize: none;
+        padding: 14px;
+
+        &:hover {
+          border: 1px solid rgb(0, 0, 0);
+        }
+      }
+
+      .formulage__item-politic {
+        display: flex;
+        align-items: center;
+      }
+
+      .formulage__item-politic p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #000000;
+      }
+
+      .formulage_item-button {
+        width: 114px;
+        height: 50px;
+        background: #4e1214;
+        border-radius: 10px;
+        margin-top: 40px;
+        color: color(secound);
+        cursor: pointer;
+        border: none;
+        transition: 0.5s;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+
+        &:hover {
+          background-color: background-color(fotter);
+          transition: 0.5s;
+        }
+      }
     }
   }
 }

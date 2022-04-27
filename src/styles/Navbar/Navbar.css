@@ -17,26 +17,26 @@
   font-weight: 400;
   padding-left: 10%;
   padding-right: 10%;
-  color: #0B0F0C;
+  color: #0b0f0c;
   text-decoration: none;
 }
 
 .menu__conteiner .menu__box .menu__link:hover {
-  color: #DCC9B9;
-  transition: .5s;
+  color: #dcc9b9;
+  transition: 0.5s;
 }
 
 .menu__conteiner .menu__box .menu__link__reservation {
   color: #ffff;
-  background-color: #AC8368;
+  background-color: #ac8368;
   border-radius: 5px;
   padding: 10px 10px 10px 10px;
 }
 
 .menu__conteiner .menu__box .menu__link__reservation:hover {
   color: #ffff;
-  background-color: #4E1214;
-  transition: .5s;
+  background-color: #4e1214;
+  transition: 0.5s;
 }
 
 .menu__conteiner .menu__logo {
