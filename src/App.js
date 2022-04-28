@@ -17,28 +17,73 @@ import { DetailsGallery } from "./pages/Details-gallery";
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
       <Routes>
         <Route
           path="/"
           element={
             <>
+              <Navbar />
               <Home />
               <SocialBox />
               <About />
               <Portfolio />
               <Offer />
               <Opinion />
+              <Footer />
             </>
           }
         />
-        <Route path="/kontakt" element={<Contact />} />
-        <Route path="/portfolio" element={<PortfolioALL />} />
-        <Route path="/opinie" element={<OpinionAll />} />
-        <Route path="/strefa-klienta" element={<ClientZone />} />
-        <Route path="/strefa-klienta/galeria" element={<DetailsGallery />} />
+        <Route
+          path="/kontakt"
+          element={
+            <>
+              <Navbar />
+              <Contact />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/portfolio"
+          element={
+            <>
+              <Navbar />
+              <PortfolioALL />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/opinie"
+          element={
+            <>
+              <Navbar />
+              <OpinionAll />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/strefa-klienta"
+          element={
+            <>
+              <Navbar />
+              <ClientZone />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="/strefa-klienta/galeria"
+          element={
+            <>
+              <Navbar />
+              <DetailsGallery />
+              <Footer />
+            </>
+          }
+        />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }

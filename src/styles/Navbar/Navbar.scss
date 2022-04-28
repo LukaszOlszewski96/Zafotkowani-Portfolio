@@ -49,7 +49,21 @@ $colors-background: (
 
       &:hover {
         color: color(special);
+        background-color: #ffff;
         transition: 0.5s;
+      }
+
+      .menu__link__portfolio {
+        font-size: 16px;
+        font-family: font-family(main);
+        font-weight: 400;
+        color: color(main);
+
+        &:hover {
+          color: color(special);
+          background-color: #ffff;
+          transition: 0.5s;
+        }
       }
     }
 
@@ -71,4 +85,18 @@ $colors-background: (
     width: auto;
     height: 80px;
   }
+}
+
+.menu__link__dropdown {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+  border: 1px solid #dcc9b9;
 }
